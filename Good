@@ -1,0 +1,465 @@
+Diseñe, codigique y pruebe una instru y pruebe una clase llamada
+Inventario que contiene:
+Un campo String llamado Símbolo
+Un campo String llamado precioDiaAnterior
+Un campo double llamado precioDiaAnterior
+Un campo double llamadao precioActual
+Un constructor que especificifica el simbolo un método llamadao getPorcentajeCambio() que especifica el cambio del precio actual respecto a 
+
+b ) Sobrecargue los los constructores (uno sin)
+
+
+
+
+Usar la programación oritentada a objetos y construir un programa
+
+
+
+Ejercicio 2:
+
+Crear una clase "Empleado" con los siguientes atributos privados: codigo, nombre y categoria. Crear sus contructores: vacio y con todos los atributos de la clase como parametros de entrada. Crear los métodos get() y set()
+
+Crear los métodos de usuario para calcular el Sueldo(), teniendo en cuenta lo siguiente:
+
+
+Categoria A, sueldo 4000;
+Categoria B, sueldo 3000;
+Categoria C, sueldo 2000;
+
+
+
+Un método de usuario para calcular el Descuento() que será el 12.5% del sueldo.
+
+
+Un metodo de usuario para calcular el SueldoNeto(). Un método de usuario toString() para obtener todos los mienbros de la clase.
+Crear una clase con método Main() y crear un objeto de la clase Empleado donde se ingresen los atributos por teclado y visualizar todos sus datos.
+
+
+
+ddda
+
+
+
+
+Proceso solu1
+    Definir n, suma como real
+    Definir cont como entero
+
+    Escribir "Ingrese un número, 0 para fin"
+    Leer n
+
+
+    suma <- 0
+    cont <- 0;
+
+    Mientras n <> 0 hacer
+        suma <- suma + n;
+        cont <- cont + 1;
+        Escribir "Ingrese un número, 0 para fin";
+        Leer n;
+    Finmientras
+
+    promedio <- suma / cont;
+
+    Si cont > 0 entonces
+         Escribir "La suma es: " suma;
+         Escribir "El promedio es: ", promedio: 
+    Sino
+        Escribir "No se ingresaron numeros"
+    Finsi
+Finproceso
+
+
+
+
+prob2. Escribir un programa que diga si un número introducido es primo o no
+
+
+Proceso solu2
+    Definir n,i como entero;
+    Definir esPrimo como logico
+    Escribir "Ingrese un entero mayor que 0";
+    Leer n;
+
+
+    esPrimo <- verdadero
+
+    Para i <- 2 hasta ( n - 1) con paso 1 hacer
+        Si ( n mod i = 0 ) entonces
+             esPrimo <- falso;
+        finsi;
+    Finpara
+
+
+
+    si ( esPrimo = verdadero) entonces
+         Escribir n, "es primo";
+    sino
+         Escribir n, "No es primo";
+    Finsi;
+ Finproceso
+
+
+
+ prob4. Escribir un algoritmo que permita crear una matriz cuadrada de tipo M por M donde el usuario ingresa el valor M. Todos los elementos se rellenan con el símbolo numeral (#)
+proceso solu4
+  definir m,i,j como entero 
+  escribir sin saltar "ingrese m: "
+  leer m
+  para i<-1 hasta m con paso 1 hacer
+     para j<-1 hasta m con paso 1 hacer
+        escribir sin saltar "#  "
+     fin para
+     escribir sin saltar ""
+  fin para
+fin proceso
+
+
+Escribir un 
+
+
+
+prob 3. Crear un algoritmo en pseudocódigo que permita ingresar un número positivo y muestre la el número en orden inverso
+
+
+
+proceso solu3
+
+      Definir n, r , c como entero;
+      Escribir "Ingrese un entero";
+      Leer n;
+
+      r <. n mod 10
+      Escribir sin saltar r;
+
+      c <- trunc(n / 10);
+
+      Mientras c <> 0 hacer
+         r < c mod 10
+         Escribir sin saltar r;
+         c <- trunc (c / 10)
+     Fin mientras
+
+Finproceso
+
+
+
+
+prob4. Escribir un algoritmo que permita crear una matriz cuadrada de tipo M  por M donde el usuario ingresar el valor M. Todos los elementos se rellenan con el símbolo numerol (#)
+
+
+proceso solu4
+     Definir m, i , j como entero;
+     Escribir sin saltar "ingrese m: " ;
+     Leer m;
+
+     para i <- 1 hasta m con paso 1 hacer
+         para j <- 1 hasta m con paso 1 hacer
+             Escribir sin saltar "#";
+         finpara
+       Escribir sin saltar "";
+     Finpara
+Finproceso
+
+
+
+Realizar un algoritmo que permita ingresar "n" notas para "m" materias de una universidad, mostrando el promedio de cada materia.
+     Definir m, n, i, suma como entero
+     Definir prom como real
+     Escribir sin saltar "Ingrese m materias: ";
+     Leer m;
+     Escribir sin saltar "Ingrese n notas: ";
+     Leer n;
+
+
+     Para i <- 1 hasta m con paso 1 hacer
+         suma <- 0;
+         Para j <- 1 hasta n con paso 1 hacer
+              Escribir sin saltar "Ingrese nota ", j;
+              Escribir sin saltar " de la materia ", i , ": ";
+              Leer nota;
+              suma <- suma + nota;
+          Finpara
+
+          prom <- suma / n;
+
+          Escribir "El promedio de la materia ", i , " es: " , prom;
+      Finpara
+ Finproceso
+
+
+
+
+ prob6. Escribir un algoritmo que permita ingresar un número "n" de estudiantes ( se cumple que: 10 <= n <= 20) cada uno de los cuáles cursa 4 materias. Para cada alumno se ingresa el nombre y sus calificaiones. Escriba un algoritmo para calcular el promedio de cada estudiante luego de ingresar sus notas.
+
+
+ Proceso solu6
+      Definir m, nota, i , j suma como real;
+      Definir prom como real;
+
+
+      Definir nombre como caracter;
+
+
+      Repetir 
+          Escribir sin saltar "Ingrese numero de estudiantes (entre 10 y 20): ";
+          Leer m;
+
+
+          Si m < 10 o m > 20 entonces
+              Escribir "Error, intente de nuevo"
+         Finsi
+
+          hasata que m >= 10 y m <= 20
+
+          Para i <- hasta m con paso 1 hacer
+              Escribir sin saltar "Ingrese el nombre del estudiante: ", i , ": ";
+              Leer nombre;
+
+
+              suma <- 0;
+
+              para j <- 1 hasta 4 con paso 1 hacer
+                   Escribir sin saltar "Ingrese nota ", j;
+                   Escribir sin slatar "del estudiante ", i , ": ";
+                   Leer nota;
+
+                   suma <- suma + nota;
+              Finpara
+
+              prom <- suma / 4;
+
+              Escribir "El promedio del estudiante: ", nombre, "es ", prom;
+          Finpara
+     Finproceso
+
+
+
+
+
+
+
+
+
+Escribir un algoritmo que permita crear una matriz M X N donde el usurario ingresa los valors de M(fila) y N ( columnas ). Todos los elementos se rellenan con el simbolo *, Por ejemplo, si el usuario ingresa M = 2 y N = 3 se debe mostrar :
+
+
+
+Construir un psudocódigo que muestre la cantidad de cifras de un número, Nota: Asumir que el número es un natural;
+
+
+Construir un psudocódigo que valide la nota de un estudiante, el programa debe pedir la nota y solo si esta se encuentra en el rango de 0 a 20 se debe mostrar. Debe pedir la nota mientras esta se encuentre el rango 
+
+
+Construir 
+
+
+
+
+
+
+
+Ejercicio :
+
+Crear una clase "Cilindro" con los atributos privados: radio (double) y altura (double). Crear un contructor vacio y otro con parámetros de todos los atributos. Crear los métodos get() y set() por cada atributo.
+
+
+- Crear el método de usuario: Area()
+- Crear el método de usuario: Volumen()
+- Crear el método de usuario: Imprimir() ó toString()
+
+
+- Crear la clase con método MAIN(testCilindro) para crear dos objetos de la clase "Cilindro", lea por teclado los atributos y visualice todos los mienbros
+
+
+
+C
+
+
+Realizar un programa que realice el conteo de los números primos del 10 al 90
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+10 / 
+
+
+Realice un programa que guarde una contraseña y luego solicite la contraseña de forma repetida hasta que se digite 
+
+
+2 / 2 = 1
+
+2  / 1 = 2 
+
+
+7 / 7 = 1
+
+7 / 1 = 7 
+
+7 /  3 = 2.5
+
+
+
+
+
+Si ( )
+
+i <- 2 
+
+
+Desarrollar un programa que muestre de manera iterativa un menú de opciones de una calcculadora hasta que el usuario presione la tecla 0 para salir
+
+Determinar en un conjunto de n números naturales:
+
+
+¿ Cuántos son menores que 15 ?
+
+¿ Cuántos son mayores que 50 ?
+
+¿ Cuántos estan en el rango entre 25 y 45?
+
+
+Un alumno tiene los siguientes atributos privados: codigo(int), nombre(String), p1(int), p2(int),ef(int). Crear los contructores (vacio y con parámetros). Crear los métodos get() y set() por cada atributo. Crear los métodos de usuario:
+ Promedio(), de acuerdo a la siguiente formula: prom = 20% (p1) + 30%(p2) + 50%(ef)
+- Condición(), aprobado o desaprobado (se aprueba con nota minima 12)
+- Obsequio(), todos los estudiantes que superan el promedio de 17 se les obsequia una mochila.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Se desea crear un algoritmo para un sistema de votación. Supóngase en este caso que hay cuatro candidatos, con identíficadores 1, 2, 3, 4. Usted habrá de calcular mediante un programa, el numero de votos correspondientes a cada candidato. El usuario ingresa los votos de manera desorganizada, tal y como se obtuvieron en la elección. El contento de votos se detiene si se ingresa el valor de cero. Observe, como ejemplo, la siguiente lista: 1, 3, 1, 4, 4, 1, 2, 4, 4,0
+
+
+
+
+
+Construir un pseudocódigo que solo permita ingresar números positivos, en caso de que el número no sea positivo debe volver a pedir que se ingrese el número hasta que el usuario ingrese un numero positivo, luego mostrar el número.
+
+
+
+Se lanza un dado reiteradas veces hasta que el valor del tiro es 1. Determinar la cantidad de veces que se lanzo el dado y el puntaje acumulado, si lo que se acumula es el valor del tiro
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Desarrolle un algoritmo que calcule el promedio de los primeros 10 números naturales usando la estructura REPETIR - HASTA QUE 
+
+
+
+Construir un pseudocódigo que valide la nota de un estudiante, el programa debe pedir la nota y no solo si esta se encuentra en el rango de 0 a 20 se debe mostrar. Debe pedir la nota mientras esta se encuentre fuera de ese rango
+
+
+Realizar un pseudocòdigo que muestre la cantidad de cifras de un número . Nota: asume que el número es un natural
+
+
+Construir un algoritmo que permita ingresar un número de "n" de estudiantes (se cumple que 1 >= n <= 50), cada uno de los cuales cursa 5 materias. Para cada alumnos se ingresa, clave y las 5 materias. Para cada calcular el promedio de cada de cada estudiante luego de ingresar sus notas.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
